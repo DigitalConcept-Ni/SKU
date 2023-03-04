@@ -1,10 +1,15 @@
-$('#visualize').on('click', function(){
-    let diasHabiles = $('#dias-habiles').val();
-    let master = $('#master').val();
-    let meta = $('#meta').val();
+$(function () {
 
-    let totalSku = $('#total-sku').val(master*meta);
-    let skuDia = $('#sku-dia').val(Math.round($('#total-sku').val()/diasHabiles));
-    let punto = $('#punto').val($('#total-sku').val()/meta);
+    $('#visualize').on('click', function () {
+        let diasHabiles = $('#dias-habiles').val();
+        let master = $('#master').val();
+        let meta = $('#meta').val();
+
+        $('#total-sku').val(master * meta);
+        $('#sku-dia').val(Math.round($('#total-sku').val() / diasHabiles));
+        $('#punto').val($('#total-sku').val() / meta);
+
+    })
+
 
 })
