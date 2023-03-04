@@ -1,0 +1,14 @@
+:root {
+  --da: #041f3a;
+  --ln: #f7931e;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content__inputs {
+  padding: 1em;
+}
